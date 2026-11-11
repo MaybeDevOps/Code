@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>15-umumiy oʻrta taʼlim maktabi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f8f3;--surface:#ffffff;--ink:#16302b;--muted:#566b66;--green:#0f5c4d;--sun:#f2b632;--line:#dbe3dc;--onGreen:#ffffff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1a17;--surface:#15261f;--ink:#e9f1ec;--muted:#9bb3ab;--green:#3fb79b;--sun:#f2b632;--line:#243a32;--onGreen:#0e1a17;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1a17;--surface:#15261f;--ink:#e9f1ec;--muted:#9bb3ab;--green:#3fb79b;--sun:#f2b632;--line:#243a32;--onGreen:#0e1a17;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "Nunito Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15;margin:0}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:62px}
+.logo{font:800 20px Fraunces,serif;text-decoration:none;color:var(--green)}
+.links{display:flex;gap:18px;overflow-x:auto;white-space:nowrap}
+.links a{text-decoration:none;font-weight:600;color:var(--muted);font-size:15px}
+.links a:hover{color:var(--green)}
+.hero{padding:72px 0 56px;display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(34px,6vw,60px);font-weight:800;color:var(--green)}
+.hero p{max-width:52ch;color:var(--muted);font-size:19px}
+.btn{display:inline-block;margin-top:12px;background:var(--green);color:var(--onGreen);padding:12px 22px;border-radius:8px;font-weight:700;text-decoration:none}
+.badge{background:var(--green);color:var(--onGreen);border-radius:28px 6px 28px 6px;padding:32px;font-family:Fraunces,serif}
+.badge b{display:block;font-size:56px;line-height:1}
+.badge span{font-family:"Nunito Sans",sans-serif;font-size:16px;opacity:.9}
+.badge div+div{margin-top:20px;border-top:1px solid rgba(255,255,255,.3);padding-top:18px}
+section{padding:56px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(28px,4vw,40px);margin-bottom:10px;color:var(--green)}
+.lead{color:var(--muted);max-width:60ch;margin:0 0 28px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px}
+.ava{width:64px;height:64px;border-radius:50%;background:var(--sun);color:#16302b;display:grid;place-items:center;font:800 22px Fraunces,serif;margin-bottom:12px}
+.card h3{font-size:19px}
+.card small{color:var(--muted);display:block}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.tabs button{font:600 15px "Nunito Sans",sans-serif;padding:8px 16px;border-radius:20px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--green);color:var(--onGreen);border-color:var(--green)}
+.ach{display:flex;gap:14px}
+.ach .yr{font:800 22px Fraunces,serif;color:var(--sun);min-width:58px}
+.ach p{margin:4px 0 0;color:var(--muted);font-size:15px}
+.news .card h3{font-size:18px;margin:4px 0}
+.news small{font-weight:700;color:var(--green)}
+table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line)}
+td,th{padding:12px 16px;text-align:left;border-bottom:1px solid var(--line)}
+th{color:var(--green);font-family:Fraunces,serif}
+.scroll{overflow-x:auto}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.contact p{margin:6px 0}
+footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px;text-align:center}
+@media (max-width:760px){.hero,.contact{grid-template-columns:1fr}.hero{padding-top:40px}}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="logo" href="#bosh">15-maktab</a>
+<div class="links"><a href="#haqida">Maktab haqida</a><a href="#oqituvchilar">Oʻqituvchilar</a><a href="#yutuqlar">Yutuqlar</a><a href="#yangiliklar">Yangiliklar</a><a href="#jadval">Dars jadvali</a><a href="#aloqa">Aloqa</a></div>
+</nav></div></header>
+
+<main>
+<div class="wrap hero" id="bosh">
+<div>
+<h1>Bilim — kelajak poydevori</h1>
+<p>15-umumiy oʻrta taʼlim maktabi 1968-yildan beri oʻquvchilarga mustahkam bilim, tarbiya va hayotga tayyorgarlik beradi.</p>
+<a class="btn" href="#aloqa">Biz bilan bogʻlaning</a>
+</div>
+<div class="badge">
+<div><b>1 250</b><span>oʻquvchi</span></div>
+<div><b>86</b><span>malakali oʻqituvchi</span></div>
+<div><b>58</b><span>yillik tajriba</span></div>
+</div>
+</div>
+
+<section id="haqida"><div class="wrap">
+<h2>Maktab haqida</h2>
+<p class="lead">Maktabimiz zamonaviy sinf xonalari, kompyuter xonasi, kutubxona va sport majmuasiga ega. Biz har bir oʻquvchining qobiliyatini aniqlab, uni rivojlantirishga eʼtibor beramiz.</p>
+<div class="grid">
+<div class="card"><h3>Missiyamiz</h3><p>Oʻquvchilarni bilimli, mustaqil fikrlaydigan va vatanparvar shaxs qilib tarbiyalash.</p></div>
+<div class="card"><h3>Fanlar</h3><p>Matematika, ona tili, ingliz tili, fizika, kimyo, biologiya, informatika va boshqalar.</p></div>
+<div class="card"><h3>Toʻgaraklar</h3><p>Robototexnika, shaxmat, rasm, qoʻshiq-raqs, futbol va debat toʻgaraklari.</p></div>
+<div class="card"><h3>Infratuzilma</h3><p>2 ta kompyuter xonasi, fizika-kimyo laboratoriyasi, 8 000 dan ortiq kitobli kutubxona.</p></div>
+</div>
+</div></section>
+
+<section id="oqituvchilar"><div class="wrap">
+<h2>Oʻqituvchilar jamoasi</h2>
+<p class="lead">Tajribali va ijodkor pedagoglarimiz har kuni oʻquvchilarga yoʻl koʻrsatadi.</p>
+<div class="grid" id="tgrid"></div>
+</div></section>
+
+<section id="yutuqlar"><div class="wrap">
+<h2>Oʻquvchilar yutuqlari</h2>
+<p class="lead">Fan olimpiadalari, sport va ijodiy tanlovlarda erishilgan natijalar.</p>
+<div class="tabs" id="tabs">
+<button aria-pressed="true" data-f="all">Barchasi</button>
+<button aria-pressed="false" data-f="Olimpiada">Olimpiadalar</button>
+<button aria-pressed="false" data-f="Sport">Sport</button>
+<button aria-pressed="false" data-f="Ijod">Ijod</button>
+</div>
+<div class="grid" id="agrid"></div>
+</div></section>
+
+<section id="yangiliklar"><div class="wrap news">
+<h2>Yangiliklar va eʼlonlar</h2>
+<p class="lead">Maktab hayotidagi soʻnggi voqealar.</p>
+<div class="grid">
+<div class="card"><small>20-noyabr</small><h3>Ota-onalar yigʻilishi</h3><p>Birinchi chorak yakunlari boʻyicha umumiy yigʻilish soat 17:00 da oʻtkaziladi.</p></div>
+<div class="card"><small>28-noyabr</small><h3>Ochiq darslar haftaligi</h3><p>Oʻqituvchilar yangi usullarni namoyish etadi, ota-onalar taklif etiladi.</p></div>
+<div class="card"><small>5-dekabr</small><h3>Robototexnika koʻrgazmasi</h3><p>Toʻgarak aʼzolari oʻz loyihalarini taqdim etadi.</p></div>
+</div>
+</div></section>
+
+<section id="jadval"><div class="wrap">
+<h2>Dars jadvali</h2>
+<p class="lead">Birinchi smena (1–11-sinflar).</p>
+<div class="scroll"><table>
+<tr><th>Dars</th><th>Vaqti</th><th>Tanaffus</th></tr>
+<tr><td>1-dars</td><td>08:00 – 08:45</td><td>5 daqiqa</td></tr>
+<tr><td>2-dars</td><td>08:50 – 09:35</td><td>10 daqiqa</td></tr>
+<tr><td>3-dars</td><td>09:45 – 10:30</td><td>10 daqiqa</td></tr>
+<tr><td>4-dars</td><td>10:40 – 11:25</td><td>5 daqiqa</td></tr>
+<tr><td>5-dars</td><td>11:30 – 12:15</td><td>5 daqiqa</td></tr>
+<tr><td>6-dars</td><td>12:20 – 13:05</td><td>—</td></tr>
+</table></div>
+</div></section>
+
+<section id="aloqa"><div class="wrap contact">
+<div>
+<h2>Aloqa</h2>
+<p><b>Manzil:</b> Toshkent shahri, Chilonzor tumani, Bunyodkor shoh koʻchasi, 15-uy</p>
+<p><b>Telefon:</b> +998 71 123 45 67</p>
+<p><b>Email:</b> info@maktab15.uz</p>
+<p><b>Ish vaqti:</b> Dushanba – Shanba, 08:00 – 17:00</p>
+</div>
+<div class="card"><h3>Direktor qabuli</h3><p>Har seshanba va payshanba kunlari soat 14:00 dan 16:00 gacha. Oldindan telefon orqali yozilish tavsiya etiladi.</p></div>
+</div></section>
+</main>
+<footer>© 2026 15-umumiy oʻrta taʼlim maktabi. Barcha huquqlar himoyalangan.</footer>
+
+<script>
+const teachers=[["Dilnoza Karimova","Direktor, Matematika"],["Bahrom Yusupov","Oʻquv ishlari boʻyicha direktor oʻrinbosari"],["Malika Rahimova","Ona tili va adabiyot"],["Sherzod Tursunov","Fizika, Informatika"],["Nargiza Abdullayeva","Ingliz tili"],["Otabek Nazarov","Kimyo, Biologiya"],["Gulnora Ergasheva","Boshlangʻich sinflar"],["Jasur Ismoilov","Jismoniy tarbiya"]];
+const ach=[["2026","Olimpiada","Respublika fan olimpiadasi — matematika, 1-oʻrin","Aziza Qodirova, 11-sinf"],["2026","Olimpiada","Viloyat ingliz tili olimpiadasi, 2-oʻrin","Jamshid Rustamov, 10-sinf"],["2026","Sport","Shaxmat boʻyicha shahar chempionati, 1-oʻrin","Sardor Aliyev, 8-sinf"],["2025","Sport","Maktablararo futbol turniri gʻolibi","Maktab terma jamoasi"],["2025","Ijod","“Yosh rassomlar” tanlovi, Grand-pri","Madina Hamidova, 6-sinf"],["2025","Olimpiada","Robototexnika festivali, 3-oʻrin","“Texno” jamoasi"]];
+const ini=n=>n.split(" ").map(x=>x[0]).join("");
+document.getElementById("tgrid").innerHTML=teachers.map(t=>`<div class="card"><div class="ava">${ini(t[0])}</div><h3>${t[0]}</h3><small>${t[1]}</small></div>`).join("");
+const ag=document.getElementById("agrid");
+function draw(f){ag.innerHTML=ach.filter(a=>f==="all"||a[1]===f).map(a=>`<div class="card ach"><div class="yr">${a[0]}</div><div><h3>${a[2]}</h3><p>${a[3]}</p></div></div>`).join("")}
+draw("all");
+document.getElementById("tabs").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;document.querySelectorAll("#tabs button").forEach(x=>x.setAttribute("aria-pressed",x===b));draw(b.dataset.f)});
+</script>
+</body>
+</html>
